@@ -5,11 +5,44 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>HTML help</title>
+  <title>Travel Book</title>
 </head>
 <body>
   <div class="container">
+    <form id="userDestinationInput">
+      <div class="form-group">
+        <label for="new-location">Add location</label>
+        <input type="text" id="new-location">
+      </div>
+      <div class="form-group">
+        <label for="new-landmarks">Add landmark</label>
+        <input type="text" id="new-landmarks">
+      </div>
+      <div class="form-group">
+        <label for="new-timeOfYear">Time of Year</label>
+        <input type="text" id="new-timeOfYear">
+      </div>
+      <div class="form-group"> 
+        <label for="notes">Notes</label>
+        <input type="text" id="new-notes">
+      </div>
+      <div class="form-group">
+        <label for="favoriteLocalFoods">Favorite food</label>
+        <input type="text" id="new-favoriteLocalFoods">
+      </div>
+      <button type="submit" class="btn-success btn-lg">Add Destination</button>
+    </form>
     
+    <h2>Destinations:</h2>
+  <ul id="destinations">
+  </ul>
+
+  <div id="show-destination">
+    <p>Location: <span class="location"></span></p>
+    <p>Landmarks: <span class="landmarks"></span></p>
+    <p>Best time to visit: <span class="timeOfYear"></span></p>
+    <p>Notes: <span class="notes"></span></p>
+    <p>Favorite Local Foods: <span class="favoriteLocalFoods"></span></p>
   </div>
   
 </body>
